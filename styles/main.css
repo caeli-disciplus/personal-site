@@ -1,0 +1,118 @@
+/**
+ * Fonts Family
+ */
+@font-face {
+    font-family: 'middlecaseblack_solid';
+    src: url('/styles/fonts/midcase_blacksolid-webfont.woff2') format('woff2'),
+    url('/styles/fonts/midcase_blacksolid-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Museo300-Regular';
+    src: url('/styles/fonts/Museo300-Regular-webfont.woff2') format('woff2'),
+    url('/styles/fonts/Museo300-Regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Museo500-Regular';
+    src: url('/styles/fonts/Museo500-Regular-webfont.woff2') format('woff2'),
+    url('/styles/fonts/Museo500-Regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Museo700-Regular';
+    src: url('/styles/fonts/Museo700-Regular-webfont.woff2') format('woff2'),
+    url('/styles/fonts/Museo700-Regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Variables */
+:root {
+    --primary-color: #FFFFFF;
+    --secondry-color: #000000;
+    --font-size: 22px;
+}
+
+body {
+    background-color: teal;
+}
+/* Master Grid  */
+.container {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    grid-template-rows: 2fr auto 1fr;
+    grid-gap: 1em;
+    grid-template-areas:
+        ". top ."
+        ". content ."
+        ". bottom .";
+}
+
+/* Content Sections: TOP, CONTENT, BOTTOM  */
+header {
+    grid-area: top;
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+}
+
+header > span.title {
+    font-family: 'middlecaseblack_solid', sans-serif;
+    color: white;
+    font-size: 6rem;
+}
+
+main {
+    grid-area: content;
+}
+
+footer {
+    grid-area: bottom;
+    font-family: 'Museo300-Regular', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* TOP - Content */
+.banner {
+    align-self: center;
+    justify-self: center;
+}
+
+.menu ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    list-style-position: outside;
+}
+
+.menu ul li a {
+    text-decoration: none;
+}
+
+.who-am-i {
+
+}
+
+.work-done {
+
+}
+
+.contacts {
+
+}
+
+h1 {
+    font-family: 'Museo700-Regular', sans-serif;
+}
+
+p {
+    font-family: 'Museo500-Regular', sans-serif;
+}
