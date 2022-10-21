@@ -62,12 +62,6 @@ header {
     grid-template-rows: 2fr 1fr;
 }
 
-header > span.title {
-    font-family: 'middlecaseblack_solid', sans-serif;
-    color: white;
-    font-size: 6rem;
-}
-
 main {
     grid-area: content;
 }
@@ -81,7 +75,10 @@ footer {
 }
 
 /* TOP - Content */
-.banner {
+header > span.title {
+    font-family: 'middlecaseblack_solid', sans-serif;
+    color: white;
+    font-size: 6rem;
     align-self: center;
     justify-self: center;
 }
@@ -97,22 +94,13 @@ footer {
     text-decoration: none;
 }
 
-.who-am-i {
-
-}
-
-.work-done {
-
-}
-
-.contacts {
-
-}
-
 h1 {
     font-family: 'Museo700-Regular', sans-serif;
 }
 
-p {
+h2 {
     font-family: 'Museo500-Regular', sans-serif;
+}
+p {
+    font-family: 'Museo300-Regular', sans-serif;
 }

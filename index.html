@@ -4,78 +4,79 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <meta name="description" content="Code Sailors Consultancy Agency"/>
-    <title>Pedro Ribeiro</title>
+    <title>Code Sailors - Braving new worlds </title>
     <link rel="stylesheet" type="text/css" href="/styles/main.css">
 </head>
-<script type="module" src="/js/index.js"></script>
+<script type="module" src="/javascript/main.js"></script>
 <body class="container">
 <header>
     <span class="title">Code Sailors</span>
-    <h1 class="banner">Pedro Ribeiro</h1>
     <nav class="menu">
         <ul>
-            <li><a href="/index.html">Home</a></li>
-            <li><a href="/about-me.html">About me</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="/contact-me.html">Contact me</a></li>
+            <li><a href="#what_we_do" target="_self">O que fazemos</a></li>
+            <li><a href="#who_we_are" target="_self">Quem somos</a></li>
+            <li><a href="#contact_us" target="_self">Contacto</a></li>
         </ul>
     </nav>
 </header>
 <main>
-    <section class="who-am-i">
-        <h2>Who am I?</h2>
+    <h1>Braving new digital worlds</h1>
+    <section id="what_we_do">
+        <h2>O que fazemos?</h2>
         <p>
-            As a developer, I’ve worked on multiple projects in different enterprise fields to name (Insurance,
-            Marketplaces, IOT, Utilities, Gamification to name a few) ranging from small web-apps that evaluate customer
-            experience, to client portals of utilities companies and apps that in real-time can switch on/off the light.
-            In sum it’s the desire to learn with the bests in field that keeps me yearning for new challenges.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Nibh sed pulvinar proin gravida hendrerit lectus. Etiam dignissim diam quis enim
+            lobortis scelerisque. Nibh cras pulvinar mattis nunc. Egestas congue quisque egestas diam in arcu cursus.
+            Nunc mattis enim ut tellus elementum sagittis. Bibendum neque egestas congue quisque egestas diam. Amet
+            massa vitae tortor condimentum lacinia quis vel. Cursus eget nunc scelerisque viverra mauris. Viverra
+            aliquet eget sit amet tellus cras adipiscing enim eu. Egestas sed sed risus pretium. Sit amet volutpat
+            consequat mauris nunc congue nisi vitae. Mattis aliquam faucibus purus in massa tempor. Id eu nisl nunc mi.
         </p>
     </section>
-    <section class="work-done">
-        <h2>Work done</h2>
+    <section id="who_we_are">
+        <h2>Quem somos?</h2>
         <p>
-            A list of the different companies and projects I had the chance to
-            work with.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Diam ut venenatis tellus in. Ac auctor augue mauris augue neque gravida in fermentum.
+            Quam id leo in vitae turpis massa sed. Sapien pellentesque habitant morbi tristique senectus et. Scelerisque
+            fermentum dui faucibus in ornare quam. Sit amet mauris commodo quis. Convallis a cras semper auctor neque
+            vitae tempus quam. Id eu nisl nunc mi ipsum faucibus vitae aliquet nec. Venenatis a condimentum vitae sapien
+            pellentesque habitant morbi tristique. Vitae proin sagittis nisl rhoncus. Elit at imperdiet dui accumsan sit
+            amet nulla facilisi. Nibh venenatis cras sed felis. Adipiscing elit duis tristique sollicitudin nibh. Quis
+            blandit turpis cursus in hac habitasse platea dictumst quisque. Quis viverra nibh cras pulvinar mattis nunc
+            sed blandit. Pharetra sit amet aliquam id. Commodo nulla facilisi nullam vehicula ipsum a arcu cursus. Odio
+            pellentesque diam volutpat commodo.
         </p>
-        <div class="company-experience">
-            <h3>Compta</h3>
-            <p>Small description about company</p>
-            <hr>
-            <p>Small description about projects developed</p>
-        </div>
-        <div class="company-experience">
-            <h3>CGI</h3>
-            <p>Small description about company</p>
-            <hr>
-            <p>Small description about projects developed</p>
-        </div>
-        <div class="company-experience">
-            <h3>Innowave Technologies</h3>
-            <p>Small description about company</p>
-            <hr>
-            <p>Small description about projects developed</p>
-        </div>
-        <div class="company-experience">
-            <h3>Affinity</h3>
-            <p>Small description about company</p>
-            <hr>
-            <p>Small description about projects developed</p>
-        </div>
-        <div class="company-experience">
-            <h3>Positive Thinking Company</h3>
-            <p>Small description about company</p>
-            <hr>
-            <p>Small description about projects developed</p>
-        </div>
     </section>
-    <section class="contacts">
-        <h3>Contacts</h3>
-        <p></p>
+    <section id="contact_us">
+        <h2>Contacte-nos</h2>
+        <form action="" method="post" class="form-submission">
+            <div class="aggregate-inputs">
+                <div class="">
+                    <label for="email">Endereço electrónico</label>
+                    <input id="email" type="email">
+                </div>
+                <div class="">
+                    <label for="work-type-select">Tipos de projectos</label>
+                    <select id="work-type-select" name="work-type">
+                        <option value="">-- Por favor escolha --</option>
+                        <option value="website">Página web</option>
+                        <option value="online-store">Loja Online</option>
+                        <option value="custom-project">Projecto à medida</option>
+                    </select>
+                </div>
+            </div>
+            <div class="">
+                <label for="content">Descrição</label>
+                <textarea id="content" name="story" rows="5" cols="33">Por favor, escreva uma breve descrição do que gostaria de realizar...</textarea>
+            </div>
+
+        </form>
     </section>
 </main>
 <footer>
     <div class="copyright">
-        Made by CodeSailors &copy; <span id="currentYear"></span> All rigths reserved.
+        Made by CodeSailors &copy; <span id="currentYear"></span> All rights reserved.
     </div>
 </footer>
 </body>
