@@ -92,15 +92,15 @@ header > span.title {
 
 .menu ul li a {
     text-decoration: none;
+    font-family: 'Museo700-Regular', sans-serif;
 }
 
 h1 {
     font-family: 'Museo700-Regular', sans-serif;
 }
-
 h2 {
-    font-family: 'Museo500-Regular', sans-serif;
+    font-family: 'Museo700-Regular', sans-serif;
 }
 p {
-    font-family: 'Museo300-Regular', sans-serif;
+    font-family: 'Museo500-Regular', sans-serif;
 }
