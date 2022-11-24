@@ -43,15 +43,15 @@
 body {
     background-color: teal;
 }
+
 /* Master Grid  */
 .container {
     display: grid;
-    grid-template-columns: 1fr auto 1fr;
-    grid-template-rows: 2fr auto 1fr;
+    grid-template-columns: 1fr 80% 1fr;
     grid-gap: 1em;
     grid-template-areas:
         ". top ."
-        ". content ."
+        ". middle ."
         ". bottom .";
 }
 
@@ -59,19 +59,16 @@ body {
 header {
     grid-area: top;
     display: grid;
-    grid-template-rows: 2fr 1fr;
 }
 
 main {
-    grid-area: content;
+    grid-area: middle;
+    display: grid;
 }
 
 footer {
     grid-area: bottom;
-    font-family: 'Museo300-Regular', sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: grid;
 }
 
 /* TOP - Content */
@@ -81,13 +78,13 @@ header > span.title {
     font-size: 6rem;
     align-self: center;
     justify-self: center;
+    padding: 0.3em 0 0.4em 0;
 }
 
 .menu ul {
     display: flex;
-    list-style: none;
     justify-content: space-evenly;
-    list-style-position: outside;
+    list-style: none outside none;
 }
 
 .menu ul li a {
@@ -95,12 +92,55 @@ header > span.title {
     font-family: 'Museo700-Regular', sans-serif;
 }
 
+/* MIDDLE - Content */
+main > section {
+    margin: 70px 0;
+}
+
+main > section#what_we_do {
+    width: 50%;
+    justify-self: end;
+}
+
+.slide {
+    animation-duration: 1s;
+    animation-name: slidein;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+}
+
+@keyframes slidein {
+    from {
+        margin-right: 0;
+    }
+    to {
+        margin-right: 50%;
+    }
+}
+
+main > section#who_we_are {
+    width: 50%;
+}
+
+/* FOOTER - Content */
+footer > div.copyright {
+    font-family: 'Museo300-Regular', sans-serif;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* GENERAL */
+
 h1 {
     font-family: 'Museo700-Regular', sans-serif;
 }
+
 h2 {
     font-family: 'Museo700-Regular', sans-serif;
 }
-p {
+
+p, label {
     font-family: 'Museo500-Regular', sans-serif;
 }
