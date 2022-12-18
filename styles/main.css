@@ -100,26 +100,12 @@ main > section {
 main > section#what_we_do {
     width: 50%;
     justify-self: end;
-}
-
-.slide {
-    animation-duration: 1s;
-    animation-name: slidein;
-    animation-iteration-count: 1;
-    animation-direction: normal;
-}
-
-@keyframes slidein {
-    from {
-        margin-right: 0;
-    }
-    to {
-        margin-right: 50%;
-    }
+    transition: transform 1s;
 }
 
 main > section#who_we_are {
     width: 50%;
+    transition: transform 1s;
 }
 
 /* FOOTER - Content */
