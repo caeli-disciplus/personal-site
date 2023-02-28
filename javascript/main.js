@@ -1,4 +1,4 @@
-/* Setting date for copyrigth */
+/* Setting date for copyright */
 const spanElement = document.getElementById('currentYear')
 const currentYear = new Date()
 spanElement.textContent = String(currentYear.getFullYear())
